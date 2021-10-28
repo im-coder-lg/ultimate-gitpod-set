@@ -21,8 +21,8 @@ tasks:
     command: cd ~ && cd /workspace/ultimate-gitpod-set/blogs/codedoc && codedoc s
 
   - name: Extra Terminal
-    init: bash
-    command: sudo apt install neofetch && neofetch && sudo apt install screenfetch && screenfetch
+    init: sudo apt install neofetch && sudo apt install screenfetch
+    command: neofetch && screenfetch
 
 vscode:
   extensions:

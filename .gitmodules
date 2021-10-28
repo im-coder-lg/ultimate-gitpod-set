@@ -1,0 +1,18 @@
+[submodule "blogs/codedoc"]
+	path = blogs/codedoc
+	url = https://github.com/im-coder-lg/coder-lg-blog-codedoc
+[submodule "blogs/mainjekyll"]
+	path = blogs/mainjekyll
+	url = https://github.com/im-coder-lg/im-coder-lg.github.io
+[submodule "webpages/ghprofile"]
+	path = webpages/ghprofile
+	url = https://github.com/im-coder-lg/im-coder-lg
+[submodule "comboser/cursorfiles"]
+	path = comboser/cursorfiles
+	url = https://github.com/im-coder-lg/comboser
+[submodule "comboser/officialdocs"]
+	path = comboser/officialdocs
+	url = https://github.com/im-coder-lg/comboserdocs
+[submodule "comboser/website"]
+	path = comboser/website
+	url = https://github.com/im-coder-lg/comboser-site

@@ -9,19 +9,15 @@ tasks:
     init: git submodule update --init --recursive
     command: exit
 
-  - name: Jekyll blog
-    before: cd blogs/mainjekyll && gem install jekyll bundle
-    init: cd ~ && cd /workspace/ultimate-gitpod-set/blogs/mainjekyll && bundle install
+  - name: Asciinema
+    init: bash
     command: |
-        cd ~ && cd /workspace/ultimate-gitpod-set/blogs/mainjekyll && bundle install && bundle exec jekyll serve
-
-  - name: CODEDOC blog
-    before: cd ~ && cd /workspace/ultimate-gitpod-set/blogs/codedoc && npm i -g @codedoc/cli
-    init: cd ~ && cd /workspace/ultimate-gitpod-set/blogs/codedoc && codedoc install
-    command: cd ~ && cd /workspace/ultimate-gitpod-set/blogs/codedoc && codedoc s
+        sudo apt-add-repository ppa:zanchey/asciinema
+        sudo apt-get update
+        sudo apt-get install asciinema neofetch -y
 
   - name: Extra Terminal
-    init: sudo apt install neofetch && sudo apt install screenfetch
+    init: sudo apt update && sudo apt install -y neofetch && sudo apt install -y screenfetch
     command: neofetch && screenfetch
 
 vscode:
